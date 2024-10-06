@@ -1,0 +1,647 @@
+:root {
+  --red: rgb(208, 2, 27);
+  --greyText: rgb(114, 114, 114);
+  --blue: rgb(50, 104, 145);
+  --blackText: rgb(18, 18, 18);
+  --backgroundColor: hsla(0, 0%, 100%, 1);
+  --headerIconBig: 20px;
+  --headerIconSmall: 14px;
+  --darkGreyText: rgb(79, 78, 78);
+  --borderColor: rgb(208, 208, 208);
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.containerPadding {
+  padding: 1rem;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blackText);
+}
+
+/* not my code */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+body {
+  font-family: 'nyt-imperial', Times, serif;
+  background-color: var(--backgroundColor);
+  color: var(--blackText);
+  font-size: 1.4rem;
+  margin: 0 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'nyt-cheltenham';
+}
+
+.icon {
+  width: var(--headerIconBig);
+  height: auto;
+}
+
+.iconSmall {
+  width: var(--headerIconSmall);
+  height: var(--headerIconSmall);
+  /* padding: ; */
+}
+
+.headerButton {
+  background: var(--blue);
+  padding: 0.8rem 1.2rem;
+  letter-spacing: 0.055rem;
+  border-radius: 3px;
+}
+
+.headerButton a {
+  color: white;
+  font-family: nyt-franklin,
+    helvetica,
+    arial,
+    sans-serif;
+  font-size: 1.1rem;
+
+}
+
+.greyText {
+  color: var(--greyText);
+}
+
+.darkerGreyText {
+  color: var(--darkGreyText);
+}
+
+.redText {
+  color: var(--red);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+header {
+  font-family: nyt-franklin,
+    helvetica,
+    arial,
+    sans-serif;
+}
+
+
+header ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 1rem;
+}
+
+.level1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.level1Left {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.level1Right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.level1Right .icon {
+  margin-left: 1rem;
+}
+
+.level2{
+  /* border-bottom: 1px solid var(--borderColor); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.languages {
+  font-size: 1.2rem;
+  border-top: 0.5px solid var(--borderColor);
+  border-left: 1px solid var(--borderColor);
+  border-right: 1px solid var(--borderColor);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; 
+  padding: 0.5rem 1rem;
+  height: 2rem;
+}
+
+.level2Container {
+  display: flex;
+  align-items: center;
+}
+
+
+.logo {
+  display: block;
+  clear: both;
+  width: 50rem;
+  margin: 0 auto;
+}
+
+.level3 {
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid black;
+  clear: both;
+}
+
+.level3Container, .level3Container span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.level3Container span{
+  gap: 0.5rem;
+}
+
+.borderRight {
+  border-right: 1px solid var(--borderColor);
+  padding: 0 1rem;
+}
+
+.borderRight:last-of-type {
+  border-right: 0;
+}
+
+
+.level4 ul {
+  text-align: center;
+  padding: 1rem;
+}
+
+.leftSection,
+.leftRightSection {
+  float: left;
+  width: 60%;
+  padding: 0.5rem 1rem;
+}
+
+.leftSection {
+  /* border-right: 1px solid var(--greyText); */
+  padding-right: 0.5rem;
+}
+
+.rightSection,
+.leftLeftSection {
+  float: left;
+  width: 40%;
+}
+
+.capital {
+  text-transform: uppercase;
+}
+
+.article2 h2 {
+  font-size: 3.5rem;
+}
+
+.dotBefore::before {
+  content: '•';
+  margin: 0 0.5rem;
+}
+
+.article4 h3 {
+  font-size: 2.8rem;
+}
+
+.mainVideoArticle img {
+  width: 100%;
+
+}
+
+.article3Links li {
+  list-style-type: none;
+  display: inline;
+}
+
+.article3Links li::after {
+  content: '|';
+  margin: 0 0.5rem;
+}
+
+.smallArticleWithImg div {
+  float: left;
+  width: 70%;
+}
+
+.smallArticleWithImg img {
+  float: left;
+  width: 25%;
+}
+
+.rightLeft,
+.rightRight,
+.rightMiddle article {
+  float: left;
+  width: 50%;
+  /* margin: 0 1rem; */
+}
+
+.smallArticleWithImg,
+.smallArticleWithImg+section {
+  clear: both;
+  padding: 1rem;
+}
+
+.longArticleWithImg {
+  width: 100%;
+  border-bottom: 1px solid var(--borderColor);
+  padding: 1rem;
+}
+
+.longArticleWithImg p {
+  float: left;
+  width: 10%;
+  padding: 1rem 0.5rem;
+}
+
+.longArticleWithImgText {
+  float: left;
+  width: 60%;
+  padding: 1rem 0.5rem;
+}
+
+.longArticleImgContainer {
+  float: left;
+  width: 30%;
+  padding: 1rem 2rem;
+}
+
+.longArticleImgContainer img {
+  width: 100%;
+}
+
+.rightTop {
+  clear: both;
+}
+
+.rightBottom {
+  clear: both;
+}
+
+.topRightContainer {
+  border-bottom: 2px solid var(--borderColor);
+}
+
+.rightMiddle {
+  border-top: 1px solid var(--borderColor);
+  border-bottom: 1px solid var(--borderColor);
+  padding: 1rem;
+  margin-top: 2px;
+
+}
+
+.crosswordText {
+  float: left;
+  width: 80%;
+}
+
+.puzzleImageContainer {
+  float: left;
+  width: 20%;
+}
+
+.puzzlePic {
+  width: 6rem;
+}
+
+.rightSection h4 {
+  text-align: center;
+
+}
+
+
+/* apply clearfix hack */
+.rightLeft .smallArticleWithImg {}
+
+
+.smallArticleWithImg {
+  padding: 0.5rem;
+  /* border: 1px solid blue; */
+  margin: 0.5rem 0
+}
+
+.opinionLink {
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+
+}
+
+.level3Hamburger {
+  display: none;
+}
+
+/* media queries */
+/* drop level 1 and 2 of header,
+and bring the hamburger to the same level as the imgnyt 
+let level3 be just the date
+drop level4*/
+@media (max-width:1024px) {
+
+  .leftSection,
+  .rightSection {
+    width: 100%;
+  }
+
+  .level1,
+  .level2,
+  .level3Container span,
+  .level4 {
+    display: none;
+  }
+
+  .logoContainer {
+    float: left;
+    width: 90%;
+  }
+
+  .hamburgerContainer {
+    float: left;
+    width: 10%;
+  }
+
+  .logo {
+    width: 30rem;
+    margin-top: 1rem;
+
+  }
+
+  .level3Hamburger {
+    display: block;
+    width: 80%;
+    margin-top: 1rem;
+
+  }
+
+  .level3Container {
+    float: right;
+    width: 90%;
+  }
+
+  .borderRight.date {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .level3 {
+    padding-bottom: 0.5rem;
+  }
+
+  /* .longArticleWithImg{
+    float: left; 
+    width: 50%; 
+    border-bottom: 0;
+  } */
+
+
+
+}
+
+
+@media (max-width:768px) {
+
+  .leftLeftSection,
+  .leftRightSection {
+    width: 100%;
+  }
+}
+
+@media (max-width:450px) {
+
+  .rightLeft,
+  .rightRight {
+    width: 100%;
+  }
+
+  /* .longArticleWithImg {
+      
+      width: 100%;
+      border-bottom: 0;
+    } */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .hamburger:first-of-type{
+    display:none;
+  } */
+/* .hamburger:last-of-type{
+    display: block;
+  } */
+
+
+}
+
+/* @media (min-width: 768px) and (max-width:1024px){
+  .smallArticleWithImg {
+      background: blue;
+    }
+}
+
+@media (min-width:1172px){
+  .smallArticleWithImg {
+      background: yellow;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+/* 
+.level1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+}
+
+
+
+
+
+x
+
+.level3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+body{
+  font-family: 'nyt-cheltenham';
+  font-size: 1rem;
+}
+
+
+
+.level3Container{
+  display: flex; 
+  gap: 1rem; 
+  justify-content: center;
+}
+
+
+
+.last{
+  border-right: 0; 
+}
+
+nav ul{
+  border-top: 0.4rem solid var(--blackText);
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hiddenMobile{
+  display: none; 
+}
+
+h2, .textCenter{
+  text-align: center;
+}
+
+
+
+.mainVideoArticle img{
+  width: 100%; 
+  text-align: center;
+}
+
+.articleLinks{
+  display: flex; 
+  font-weight: bold;
+}
+
+
+
+.smallArticleWithImg div{
+  float: left;
+  width: 70%;
+}
+
+.smallArticleWithImg img{
+  width: 30%; 
+  float: left;
+  height: 6rem;
+}
+
+
+
+.clearFloat{
+  clear: both; 
+}
+
+.blue{
+  color: var(--blue);
+}
+
+.flexBetween{
+  display: flex; 
+  row-gap: 1rem;
+  justify-content: space-between;
+}   
+  */
